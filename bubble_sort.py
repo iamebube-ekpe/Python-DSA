@@ -8,7 +8,7 @@ def bubbleSort(uList):
 
     return uList
 
-userList = input("Enter a list of values: ").split()
+userList = input("Enter a list of values (seperated with spaces): ").replace(",", " ").split()
 userList = [int(x) for x in userList]
 print(f"You entered: {userList}")
 print(f"Bubble Sorted List: {bubbleSort(userList)}")
